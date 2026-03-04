@@ -1,0 +1,194 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Haseeb Aslam | Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background: linear-gradient(45deg, #0b0b0b, #e10600);color:#f5f5f5;line-height:1.6}
+
+/* NAVBAR */
+header{background:#000;border-bottom:2px solid #e10600;position:sticky;top:0;z-index:1000}
+nav{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+nav h1{color:#e10600;font-size:26px}
+nav ul{list-style:none;display:flex;gap:12px;flex-wrap:wrap}
+nav ul li a{color:#fff;text-decoration:none;background:#e10600;padding:8px 14px;border-radius:6px;transition:.3s}
+nav ul li a:hover{background:#ff2a2a;transform:translateY(-3px)}
+
+/* SECTIONS */
+section{max-width:1200px;margin:auto;padding:70px 20px;animation:fadeUp 1.2s ease}
+section h2{color:#e10600;margin-bottom:20px;font-size:32px}
+
+/* HOME */
+#home{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+#home img{width:260px;height:260px;object-fit:cover;border-radius:50%;border:4px solid #e10600;box-shadow:0 0 20px rgba(225,6,0,.6)}
+.profile-name{margin-top:15px;font-size:22px;color:#fff;font-weight:600}
+.profile-contact p{color:#ccc;font-size:14px;margin-top:6px}
+
+/* CARDS */
+.card{background:#141414;padding:25px;border-radius:10px;border-left:4px solid #e10600;margin-bottom:20px}
+
+/* SKILLS */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.skill{background:#141414;padding:20px;border-radius:8px;text-align:center}
+
+/* CERTIFICATES */
+.certificates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.certificate-card{background:#141414;padding:15px;border-radius:10px;border-left:4px solid #e10600;text-align:center;transition:.3s}
+.certificate-card img{width:100%;max-width:260px;height:170px;object-fit:contain;background:#000;padding:8px;border-radius:6px}
+.certificate-card:hover{transform:translateY(-6px);box-shadow:0 0 20px rgba(225,6,0,.6)}
+.certificate-card p{margin-top:10px;font-size:14px;color:#ccc}
+
+/* SOCIAL ICONS */
+.social-icons{position:fixed;top:35%;right:20px;display:flex;flex-direction:column;gap:14px;z-index:2000}
+.social-icons a{width:42px;height:42px;background:#000;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:.3s}
+.social-icons a:hover{transform:translateX(-6px) scale(1.1);box-shadow:0 0 18px rgba(225,6,0,.9)}
+.social-icons a:nth-child(1):hover{background:#1877f2}
+.social-icons a:nth-child(2):hover{background:#25d366}
+.social-icons a:nth-child(3):hover{background:#e1306c}
+.social-icons a:nth-child(4):hover{background:#0a66c2}
+.social-icons a:nth-child(5):hover{background:#333}
+
+/* FOOTER */
+footer{background:#000;text-align:center;padding:20px;border-top:2px solid #e10600}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+/* MOBILE */
+@media(max-width:768px){
+#home{grid-template-columns:1fr;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>Muhammad Haseeb Aslam</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+<div>
+<h3>Hello, I'm</h3>
+<h2 style="color:#fff">Muhammad Haseeb Aslam</h2>
+<p>Software Engineering Student | Web & Software Developer</p>
+</div>
+<div style="text-align:center">
+<img src="./profile.jpg" alt="Muhammad Haseeb">
+<div class="profile-name">Muhammad Haseeb Aslam</div>
+<div class="profile-contact">
+<p><i class="fas fa-map-marker-alt"></i> Layyah, Punjab, Pakistan</p>
+<p><i class="fas fa-phone"></i> +92 312 6845569</p>
+<p><i class="fas fa-envelope"></i> haseebnew352@gmail.com</p>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+Aspiring Software Engineer with strong interest in modern web and software development. Passionate about building clean, scalable, and user-friendly solutions.
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<div class="card">BS Software Engineering – Emerson University Multan</div>
+<div class="card">Intermediate – Govt Graduate College Layyah</div>
+<div class="card">Matric – Govt Model High School Layyah</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">Web Traffic -Noon digihub </div>
+<div class="card">Crypto Trading -ON binance </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills & Hobbies</h2>
+<div class="skills">
+<div class="skill">HTML / CSS</div>
+<div class="skill">C# / ASP.NET</div>
+<div class="skill">Java (OOP)</div>
+<div class="skill">Database Management</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Photoshop Editing</div>
+<div class="skill">MS Office skill</div>
+<div class="skill">Learning New Tech</div>
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h2>Certificates</h2>
+<div class="certificates">
+<div class="certificate-card">
+<img src="cert1.jpg">
+<p>Govt Soft Skills Certificate</p>
+</div>
+<div class="certificate-card">
+<img src="cert2.jpeg">
+<p>Matric Education Certificate</p>
+</div>
+<div class="certificate-card">
+<img src="cert3.jpeg">
+<p>Co-Curricular Activity Certificate</p>
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+Add your project descriptions here. For example: Developed a personal portfolio website using HTML, CSS, and JavaScript.
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: haseebnew352@gmail.com</p>
+<p>Phone: +92 312 6845569</p>
+</div>
+</section>
+
+<!-- SOCIAL -->
+<div class="social-icons">
+<a href="https://www.facebook.com/share/1Kbe3GCncx/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://wa.me/923126845569" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/haseeb_shaikh80" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/haseeb-aslam-27b666337" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+<footer>
+<p>© 2026 Muhammad Haseeb | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+```
